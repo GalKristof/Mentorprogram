@@ -17,3 +17,72 @@ body, html {
 }
 
 /* CSS RESET és alapok */
+
+/* Container */
+.container{
+    display: block;
+    width: 500px;
+    margin: 0 auto;
+    border-radius: 16px;
+    background-color: #006633;
+}
+/* Container */
+
+/* Titles */
+
+.titles{
+    padding-top: 12px;
+    padding-bottom: 16px;
+}
+
+h1{
+    color: white;
+    font-weight: 400;
+    font-size: 2rem;
+    margin: auto;
+    text-align: center;
+    line-height: 30.24px;
+}
+
+.title-question{
+    font-weight: 700;
+}
+
+/* Titles */
+
+/* Buttons */
+
+.answers{
+    padding-bottom: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+}
+
+button{
+    height: 40px;
+    background-color: #BFBFBF;
+    border: 1px solid #F2F2F2;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Work Sans", serif;
+    border-radius: 8px;
+    padding: 8px 32px 8px 32px;
+    cursor: pointer;
+    transition: background-color .2s ease;
+}
+
+button.cancel{
+    font-weight: 700;
+}
+
+button.approve{
+    background-color: #EF3A43;
+}
+
+button:hover{
+    background-color: blue;
+}
+
+/* Buttons */
