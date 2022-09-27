@@ -13,6 +13,94 @@ body, html {
     font-family: "Roboto", sans-serif;
     font-size: 10px;
     background-color: #E5E5E5;
+    color: black;
 }
 
 /* CSS RESET és alapok */
+
+/* Section */
+
+section.name-input{
+    width: 620px;
+    margin: auto;
+    background: #fff;
+    padding-bottom: 18px;
+}
+
+/* Section */
+
+/* Header */
+
+header.top-header{
+    background-color: #006633;
+    height: 35px;
+    margin-bottom: 9px;
+}
+
+div.title{
+    background-color: #fff;
+    transform: skew(-35deg);
+    margin: auto;
+    width: 144px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1.title{
+    transform: skew(35deg);
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    font-weight: 900;
+}
+
+h1.title>i{
+    font-size: 1.6rem;
+}
+
+/* Header */
+
+/* Inputs */
+
+form{
+    background: #fff;
+}
+
+label{
+    color: #006633;
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 97px;
+    margin-top: 0;
+}
+
+input{
+    width: 450px;
+    height: 45px;
+    line-height: 100%;
+    border-radius: 44px;
+    border: 1px solid #006633;
+    display: block;
+    margin-left: 82px;
+    margin-bottom: 22px;
+    padding-left: 15px;
+    color: #55AE3A;
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+
+input#nickname{
+    margin-bottom: 0;
+}
+
+input::placeholder{
+    color: #55AE3A;
+    font-size: 2.4rem;
+    font-weight: 400;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Inputs */
