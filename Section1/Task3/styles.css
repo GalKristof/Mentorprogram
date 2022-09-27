@@ -22,10 +22,14 @@ body, html {
 
 .container{
     background: white;
+    margin: 0;
+    padding: 0;
+    height: 120px;
 }
 
 section.notification{
     display: flex;
+    align-items: center;
 }
 
 /* Container */
@@ -38,11 +42,50 @@ img{
 /* Image */
 
 /* Text */
+.text{
+    margin-left: 14.97px;
+}
+h1.notification-message{
+    font-size: 2.8rem;
+    font-weight: 700;
+    width: 620px;
+}
 /* Text */
 
 /* Date */
+h2.date{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-right: 77px;
+    word-spacing: 1rem;
+}
 /* Date */
 
 /* Buttons */
+
+.buttons{
+    display: flex;
+    gap: 28px;
+}
+
+button{
+    padding: 4px 8px 4px 8px;
+    width: 56px;
+    height: 56px;
+    background-color: #006633;
+    border-radius: 50%;
+    color: white;
+    font-size: 3.3rem;
+    cursor: pointer;
+    transition: background-color .2s ease;
+}
+
+button.list{
+    background-color: #DF7E24;
+}
+
+button:hover{
+    background-color: blue;
+}
 
 /* Buttons */
