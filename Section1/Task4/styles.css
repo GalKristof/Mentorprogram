@@ -18,3 +18,77 @@ body, html {
 
 /* CSS RESET és alapok */
 
+/* Container */
+
+.container{
+    margin: 0;
+    margin-top: 1rem;
+    padding: 0;
+    color: white;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 50% 50%;
+}
+
+section{
+    width: 300px;
+    background-color: #006633;
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+section.profile:nth-of-type(1){
+    height: 300px;
+    border-radius: 44px;
+}
+
+section.profile:nth-of-type(2){
+    height: 125px;
+    border-radius: 36px;
+}
+
+
+
+/* Container */
+
+/* Image */
+img#profile-pic-1{
+    width: 235px;
+    height: 235px;
+    margin-top: 22px;
+    border-radius: 44px 44px 0px 0px;
+}
+
+img#profile-pic-2{
+    width: 128px;
+    height: 128px;
+    border-radius: 100px;
+    border: 4px solid #006633;
+    transform: translate(-50%, -58px);
+    position: absolute;
+}
+/* Image */
+
+/* Text */
+
+
+section.profile:nth-of-type(1) h1{
+    font-size: 2.6rem;
+}
+
+section.profile:nth-of-type(2) h1{
+    font-size: 2rem;
+    line-height: 20px;
+    transform: translateY(77px);
+}
+
+h2{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: normal;
+    transform: translateY(77px);
+}
+/* Text */
+
