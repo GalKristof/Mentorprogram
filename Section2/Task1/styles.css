@@ -11,7 +11,7 @@
 
 body, html {
     font-family: "Roboto", sans-serif;
-    font-size: 30px;
+    font-size: 10px;
     background-color: #E5E5E5;
     color: black;
 }
@@ -21,7 +21,52 @@ body, html {
 /* Container */
 
 .container{
+    background: #006633;
+    width: max-content;
+    margin: 1rem auto 0 auto;
+}
 
+section.newsletter{
+    padding: 38px 50px 36px 50px;
+    margin: 0;
 }
 
 /* Container */
+
+/* Texts */
+
+h1{
+    color: white;
+    font-size: 3.2rem;
+}
+
+h3{
+    font-weight: 400;
+    color: white;
+}
+
+span.accept{
+    font-weight: 700;
+    text-decoration: underline;
+    font-size: 1.4rem;
+}
+
+/* Texts */
+
+/* Title */
+
+div.title{
+    margin-bottom: 19px;
+}
+
+/* Title */
+
+/* Inputs */
+
+input:not(:last-of-type){
+    width: 400px;
+    height: 50px;
+    border-radius: 4px;
+}
+
+/* Inputs */
