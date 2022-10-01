@@ -21,15 +21,16 @@ body, html {
 /* Container */
 
 .container{
-    background: #006633;
     width: max-content;
     margin: 1rem auto 0 auto;
-    border-radius: 16px;
 }
 
 section.newsletter{
     padding: 38px 50px 36px 50px;
     margin: 0;
+    background: #006633;
+    border-radius: 16px;
+    height: fit-content;
 }
 
 /* Container */
@@ -61,14 +62,6 @@ span.accept{
 
 /* Texts */
 
-/* Title */
-
-div.title{
-    margin-bottom: 9px;
-}
-
-/* Title */
-
 /* Inputs */
 
 input:not(#accept){
@@ -79,6 +72,11 @@ input:not(#accept){
     margin-top: 10px;
     border: 2px solid #55AE3A;
     display: block;
+}
+
+input#name{
+    margin-bottom: 20px;
+    margin-top: 18px;
 }
 
 input[type=text], input[type=email]{
@@ -94,6 +92,8 @@ input::placeholder{
 .accept-box{
     display: flex;
     position: relative;
+    height: 18px;
+    align-items: center;
 }
 
 input[type=checkbox]{
