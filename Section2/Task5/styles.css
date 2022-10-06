@@ -1,0 +1,75 @@
+/* CSS RESET és alapok */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    outline: none;
+}
+
+body, html {
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    background-color: #E5E5E5;
+    color: black;
+}
+
+/* CSS RESET és alapok */
+
+/* Container */
+
+.container{
+    width: max-content;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+section.filter{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    color: white;
+    gap: 20px;
+    background-color: #363636;
+    height: 60px;
+    align-items: center;
+    overflow: show;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+/* Container */
+
+/* Elements */
+
+.element{
+    position: relative;
+}
+
+.element:first-of-type, .element:last-of-type{
+    width: 60px;
+    height: 60px;
+}
+
+.element:first-of-type{
+    border-radius: 50%;
+    background-color: #55AE3A;
+}
+
+.element:last-of-type{
+   border-radius: 50%;
+}
+
+.element>i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
