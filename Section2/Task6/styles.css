@@ -32,3 +32,53 @@ body, html {
 
 /* Container */
 
+/* image */
+
+.image, .image img{
+    width: 700px;
+    height: 362px;
+}
+
+/* image */
+
+
+/* line */
+
+.line{
+    display: flex;
+    background-color: #006633;
+    height: 38px;
+    font-size: 1.6rem;
+}
+
+.line-right{
+    display: flex;
+    margin-left: auto;
+}
+
+.date{
+    font-size: 2rem;
+}
+
+.line-left div, .line-right div{
+    height: 38px;
+    vertical-align: middle;
+} 
+
+.cat{
+    background: white;
+    color: black;
+    transform: skew(-35deg);
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+i.category, span.category{
+    display: inline-block;
+    transform: skew(35deg)
+}
+
+
+
+/* line */
