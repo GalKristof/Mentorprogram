@@ -7,6 +7,7 @@
     list-style: none;
     border: none;
     outline: none;
+    font-weight: 700;
 }
 
 body, html {
@@ -30,6 +31,11 @@ body, html {
     text-align: center;
 }
 
+section.card{
+    background-color: #B1DDC4;
+    padding: 18px 25px 11px 25px;
+}
+
 /* Container */
 
 /* Question */
@@ -37,13 +43,66 @@ body, html {
 h1.question{
     font-size: 2.6rem;
     color: black;
-    font-weight: 700;
+    margin-bottom: 18px;
 }
 
 /* Question */
 
 /* Answers */
+
+button.answer{
+    height: 65px;
+    width: 220px;
+    background-color: #006633;
+    font-size: 2.4rem;
+    color: white;
+}
+
+.answers{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    justify-items: center;
+}
+
 /* Answers */
 
 /* Vote */
+
+button.vote{
+    width: 120px;
+    height: 35px;
+    border-radius: 8px;
+    border: 1px solid black;
+    padding: 8px 32px;
+    background-color: #55AE3A;
+    position: relative;
+    box-shadow: 0px 1px 2px #1E1E25, 0px 2px 4px #1E1E22;
+    margin-top: 10px;
+}
+
+.vote-text{
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
 /* Vote */
+
+
+@media(min-width: 600px)
+{
+    .answers{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(min-width: 960px)
+{
+    .answers{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
