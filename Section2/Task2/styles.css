@@ -70,6 +70,10 @@ nav{
     height: 20px;
 }
 
+.menu{
+    cursor: pointer;
+}
+
 /* left */
 
 /* middle */
@@ -141,6 +145,7 @@ nav{
 
     .settings, .icon-elements ol li{
         font-size: 4rem;
+        cursor: pointer;
     }
 
     nav{
@@ -153,5 +158,44 @@ nav{
     .profile, .profile img{
         height: 64px;
         width: 64px;
+        cursor: pointer;
+    }
+}
+
+@media(min-width: 1350px)
+{
+    nav{
+        justify-content: flex-start;
+    }
+
+    .header-nav-middle{
+        display: unset;
+        margin-left: 22px;
+    }
+
+    .text-elements ol{
+        display: flex;
+        font-size: 3rem;
+        gap: 35px;
+    }
+
+    .text-elements ol li{
+        word-spacing: -0.25em;
+    }
+
+    .text-elements ol li i{
+        margin-right: 10px;
+    }
+
+    .text-elements ol li span, .text-elements ol li i{
+        word-spacing: normal;
+    }
+
+    .text-elements ol li:hover{
+        text-decoration: underline;  
+    }
+
+    .header-nav-right{
+        margin-left: auto;
     }
 }
