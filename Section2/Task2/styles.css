@@ -28,13 +28,13 @@ body, html {
 header{
     width: 100vw;
     background: #006633;
-    font-size: 3rem;
+    font-size: 1.6rem;
 }
 
 nav{
     display: flex;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 4px;
+    padding-bottom: 4px;
     align-items: center;
 }
 
@@ -45,17 +45,113 @@ ol{
 /* Container */
 
 
-/* Nav */
+/* nav */
+nav{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    position: relative;
+}
+/* nav */
+
+/* left */
+
+.header-nav-left{
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-left: 8px;
+}
 
 .logo img{
-    height: 65px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 20px;
+}
+
+/* left */
+
+/* middle */
+
+.header-nav-middle{
+    display: none;
+}
+
+/* middle */
+
+/* right */
+
+.header-nav-right{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 18px;
+    font-size: 2.4rem;
+    margin-right: 8px;
+}
+
+.icon-elements{
+    display: none;
 }
 
 .profile, .profile img{
-    height: 64px;
-    width: 64px;
+    height: 32px;
+    width: 32px;
     border-radius: 50%;
     border: 1px solid #F2F2F2;
 }
 
-/* Nav */
+/* right */
+
+
+@media(min-width: 720px)
+{
+
+    header{
+        font-size: 3rem;
+    }
+
+    .logo, .logo img{
+        position:unset;
+        left: unset;
+        top: unset;
+        transform: unset;
+        height: 65px;
+    }
+
+    .header-nav-left{
+        margin-left: 26px;
+        gap: 13px;
+    }
+
+    .header-nav-right{
+        flex-direction: row;
+        margin-right: 10px;
+    }
+
+    .mobile-notification{
+        display: none;
+    }
+
+    .icon-elements, .icon-elements ol{
+        display: flex;
+        gap: 23px;
+    }
+
+    .settings, .icon-elements ol li{
+        font-size: 4rem;
+    }
+
+    nav{
+        display: flex;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        justify-content: space-between;
+    }
+
+    .profile, .profile img{
+        height: 64px;
+        width: 64px;
+    }
+}
