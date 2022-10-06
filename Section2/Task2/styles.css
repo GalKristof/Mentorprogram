@@ -181,6 +181,7 @@ nav{
 
     .text-elements ol li{
         word-spacing: -0.25em;
+        cursor: pointer;
     }
 
     .text-elements ol li i{
