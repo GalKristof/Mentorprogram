@@ -27,6 +27,88 @@ body, html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+section.profile-card{
+    background-color: #55AE3A;
+    border-radius: 36px;
+    padding-inline: 25px;
+    padding-bottom: 17px;
 }
 
 /* Container */
+
+/* Profile */
+
+.profile-image{
+    width: max-content;
+    height: max-content;
+    margin: auto;
+    margin-bottom: 3px;
+}
+
+.profile-image img{
+    width: 128px;
+    height: 128px;
+    border-radius: 100px;
+    border: 4px solid #55AE3A;
+}
+
+h1.name{
+    font-size: 2rem;
+}
+
+.category{
+    font-size: 1.6rem;
+}
+
+/* Profile */
+
+/* Description */
+
+.description{
+    margin-top: 11px;
+    margin-bottom: 12px;
+    width: 250px;
+    font-size: 1.4rem;
+    text-align: justify;
+    font-weight: 400;
+}
+
+.category .icon{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    font-size: 1.4rem;
+    vertical-align: middle;
+}
+
+/* Description */
+
+/* Icons */
+
+.icons ol{
+    display: flex;
+    gap: 4px;
+    height: 30px;
+    justify-content: center;
+}
+.icon{
+    background-color: #006633;
+    width: 30px;
+    height: 30px;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    position: relative;
+}
+
+.icon i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Icons */
+
