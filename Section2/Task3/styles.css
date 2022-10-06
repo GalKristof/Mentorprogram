@@ -23,6 +23,69 @@ body, html {
 .container{
     width: max-content;
     margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* Container */
+
+/* Table */
+
+table{
+    width: fit-content;
+    background: #006633;
+    text-align: left;
+}
+
+th{
+    padding-top: 16.02px;
+    padding-bottom: 16.02px;
+}
+
+th:nth-of-type(1){
+    padding-left: 13px;
+    width: 76px;
+}
+
+th:nth-of-type(2){
+    width: 172px;
+}
+
+th:nth-of-type(3){
+    width: 234.67px; /* 234.67 */
+}
+
+th:nth-of-type(4){
+    width: 228.46px; /* 228.55 */
+}
+
+th:nth-of-type(5){
+    width: 206.55px; /* 206.55 */
+}
+
+th:nth-of-type(6){
+    width: 165.67px; /* 165.67 */
+}
+
+th:nth-of-type(7){
+    width: 223.33px; /* 223.33 */
+}
+
+th:nth-of-type(8){
+    width: 180.34px; /* 180.34 */
+}
+
+th:nth-of-type(9){
+    width: 173px; /* 220.01 */
+}
+
+th:nth-of-type(10){
+    width: 32.09px; /* 32.09 */
+    padding-right: 32.07px;
+}
+
+th>i{
+    font-size: 2.4rem;
+}
