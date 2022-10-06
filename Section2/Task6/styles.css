@@ -56,20 +56,27 @@ body, html {
     margin-left: auto;
 }
 
-.date{
+div.date{
     font-size: 2rem;
+    margin-right: 5px;
+    font-weight: 700;
 }
 
-.line-left div, .line-right div{
-    height: 38px;
+.line-left>div, .line-right>div, .cat{
+    height: 100%;
+    display: table;
+}
+
+.inside-content{
+    display: table-cell;
     vertical-align: middle;
-} 
+}
 
 .cat{
     background: white;
     color: black;
     transform: skew(-35deg);
-    margin-left: 8px;
+    margin-left: 18px;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -77,6 +84,18 @@ body, html {
 i.category, span.category{
     display: inline-block;
     transform: skew(35deg)
+}
+
+div.length{
+    margin-right: 15px;
+}
+
+div.watched{
+    margin-right: 24px;
+}
+
+span.length::after{
+    content: " min";
 }
 
 
