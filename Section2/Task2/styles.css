@@ -22,7 +22,7 @@ body, html {
 
 .container{
     width: max-content;
-    margin: 1rem auto 0 auto;
+    margin: 0 auto;
 }
 
 header{
@@ -33,6 +33,9 @@ header{
 
 nav{
     display: flex;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    align-items: center;
 }
 
 ol{
@@ -40,3 +43,19 @@ ol{
 }
 
 /* Container */
+
+
+/* Nav */
+
+.logo img{
+    height: 65px;
+}
+
+.profile, .profile img{
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    border: 1px solid #F2F2F2;
+}
+
+/* Nav */
