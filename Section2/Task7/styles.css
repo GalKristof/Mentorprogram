@@ -56,6 +56,7 @@ button.answer{
     background-color: #006633;
     font-size: 2.4rem;
     color: white;
+    cursor: pointer;
 }
 
 .answers{
@@ -91,6 +92,15 @@ button.vote{
 
 
 /* Vote */
+
+/* When Picked Element */
+
+.picked{
+    background-color: crimson!important;
+}
+
+/* When Picked Element */
+
 
 
 @media(min-width: 600px)
