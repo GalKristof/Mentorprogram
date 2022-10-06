@@ -63,6 +63,10 @@ h1.name{
     font-size: 1.6rem;
 }
 
+span.cat{
+    vertical-align: middle;
+}
+
 /* Profile */
 
 /* Description */
@@ -101,6 +105,12 @@ h1.name{
     font-size: 1.5rem;
     border-radius: 50%;
     position: relative;
+    transition: background-color .1s ease-in-out;
+    cursor: pointer;
+}
+
+.icon:hover{
+    background-color: #E2252B;
 }
 
 .icon i{
@@ -108,6 +118,10 @@ h1.name{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+a{
+    color: white;
 }
 
 /* Icons */
