@@ -16,6 +16,9 @@
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
 
+    <!-- Scripts -->
+    <script src="script.js" defer></script>
+
 </head>
 <body>
 
@@ -37,12 +40,19 @@
             <section class="form">
                 <form>    
                     <input type="email" class="email" placeholder="Email"/>
-                    <input type="password" class="password" placeholder="Jelszó"/>
+                    <label class="invalid-email" id="invalid-email">Hibás e-mail cím</label>
+                    <div class="password-container">
+                        <input type="password" class="password" placeholder="Jelszó" id="password"/>
+                        <i class="fa fa-eye" id="eye"></i>
+                    </div>
                     <span class="forgetpassword">Elfelejtetted a jelszavad?</span>
                     
                     <div class="rememberme">
-                        <input type="checkbox" name="" id=""/>
-                        <span class="rememberme">Emlékezz rám</span>
+                        <label for="checkbox" class="switch">
+                            <input type="checkbox"id="checkbox"/>
+                            <div class="slider round"></div>
+                            <span class="rememberme">Emlékezz rám</span>
+                        </label>
                     </div>
                 </form>
             </section>
