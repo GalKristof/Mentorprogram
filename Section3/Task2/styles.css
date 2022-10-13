@@ -126,6 +126,8 @@ nav{
     border-radius: 50%;
     font-size: 4.8rem;
     position: relative;
+    transition: background-color .3s ease-in-out;
+    cursor: pointer;
 }
 
 .header-item>i, .header-item>img{
@@ -133,6 +135,10 @@ nav{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.header-item:hover{
+    background-color: #884444;
 }
 
 .header-item>img{
@@ -212,6 +218,11 @@ span.date-text{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.arrow:hover{
+    color: #55AE3A;
 }
 
 .left-d-ar{
@@ -277,6 +288,12 @@ span.date-text{
     .settings, .signout, .icon-elements ol li{
         font-size: 4rem;
         cursor: pointer;
+        transition: color .2s ease-in-out;
+    }
+
+    .settings:hover, .signout:hover, .icon-elements ol li:hover{
+        transform: scale(1.1);
+        color: #FF9900;
     }
 
     nav{
@@ -291,6 +308,11 @@ span.date-text{
         width: 64px;
         cursor: pointer;
     }
+
+    .profile:hover{
+        transform: scale(1.1);
+    }
+
 }
 
 @media(min-width: 830px)
