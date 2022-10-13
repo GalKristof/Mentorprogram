@@ -1,0 +1,202 @@
+/* CSS RESET és alapok */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    outline: none;
+}
+
+body, html {
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+    background-color: #E5E5E5;
+    color: white;
+}
+
+/* CSS RESET és alapok */
+
+/* Container */
+
+.container{
+    width: max-content;
+    margin: 0 auto;
+}
+
+header{
+    width: 100vw;
+    background: #006633;
+    font-size: 1.6rem;
+}
+
+nav{
+    display: flex;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    align-items: center;
+}
+
+ol{
+    display: flex;
+}
+
+/* Container */
+
+
+/* nav */
+nav{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    position: relative;
+}
+/* nav */
+
+/* left */
+
+.header-nav-left{
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-left: 8px;
+}
+
+.logo img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 20px;
+}
+
+.menu{
+    cursor: pointer;
+}
+
+/* left */
+
+/* middle */
+
+.header-nav-middle{
+    display: none;
+}
+
+/* middle */
+
+/* right */
+
+.header-nav-right{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 18px;
+    font-size: 2.4rem;
+    margin-right: 8px;
+}
+
+.icon-elements{
+    display: none;
+}
+
+.profile, .profile img{
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    border: 1px solid #F2F2F2;
+}
+
+/* right */
+
+
+@media(min-width: 720px)
+{
+
+    header{
+        font-size: 3rem;
+    }
+
+    .logo, .logo img{
+        position:unset;
+        left: unset;
+        top: unset;
+        transform: unset;
+        height: 65px;
+    }
+
+    .header-nav-left{
+        margin-left: 26px;
+        gap: 13px;
+    }
+
+    .header-nav-right{
+        flex-direction: row;
+        margin-right: 10px;
+    }
+
+    .mobile-notification{
+        display: none;
+    }
+
+    .icon-elements, .icon-elements ol{
+        display: flex;
+        gap: 23px;
+    }
+
+    .settings, .icon-elements ol li{
+        font-size: 4rem;
+        cursor: pointer;
+    }
+
+    nav{
+        display: flex;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        justify-content: space-between;
+    }
+
+    .profile, .profile img{
+        height: 64px;
+        width: 64px;
+        cursor: pointer;
+    }
+}
+
+@media(min-width: 1350px)
+{
+    nav{
+        justify-content: flex-start;
+    }
+
+    .header-nav-middle{
+        display: unset;
+        margin-left: 22px;
+    }
+
+    .text-elements ol{
+        display: flex;
+        font-size: 3rem;
+        gap: 35px;
+    }
+
+    .text-elements ol li{
+        word-spacing: -0.25em;
+        cursor: pointer;
+    }
+
+    .text-elements ol li i{
+        margin-right: 10px;
+    }
+
+    .text-elements ol li span, .text-elements ol li i{
+        word-spacing: normal;
+    }
+
+    .text-elements ol li:hover{
+        text-decoration: underline;  
+    }
+
+    .header-nav-right{
+        margin-left: auto;
+    }
+}
