@@ -274,7 +274,7 @@ span.date-text{
         gap: 23px;
     }
 
-    .settings, .icon-elements ol li{
+    .settings, .signout, .icon-elements ol li{
         font-size: 4rem;
         cursor: pointer;
     }
