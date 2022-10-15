@@ -13,7 +13,6 @@ body, html {
     font-family: "Roboto", sans-serif;
     font-size: 10px;
     background-color: #E5E5E5;
-    color: white;
 }
 
 /* CSS RESET és alapok */
@@ -22,7 +21,168 @@ body, html {
 
 .container{
     width: max-content;
-    margin: 0 auto;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 300px;
+    padding-bottom: 150px;
+}
+
+section.profile-card{
+    background-color: white;
+    text-align: center;
 }
 
 /* Container */
+
+/* Profile */
+
+section.profile{
+    color: #006633;
+    padding-top: 34px;
+}
+
+img.profile{
+    width: 234px;
+    height: 234px;
+    border-radius: 200px;
+    border: 10px solid #006633;
+}
+
+h1.full-name{
+    font-size: 4rem;
+    font-weight: 700;
+    margin-top: 7px;
+}
+
+h2.nick-name{
+    font-size: 3.2rem;
+    font-weight: 400;
+}
+
+/* Profile */
+
+/* Data-Blocks */
+
+.title-container{
+    background-color: #006633;
+    width: 100%;
+}
+
+.title-box{
+    transform: skew(-35deg);
+    background-color: #fff;
+    width: fit-content;
+    margin-inline: auto;
+}
+
+h3.block-title{
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding-inline: 15px;
+    transform: skew(35deg);
+}
+
+/* Data-Blocks */
+
+/* List Elements */
+
+ul{
+    margin-top: 4px;
+}
+
+ul li{
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: #006633;
+}
+
+/* List Elements */
+
+/* Fav Sport */
+
+section.fav-sport{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+/* Fav Sport */
+
+/* Tags */
+
+.tag-container{
+    display: flex;
+    gap: 4px;
+    margin-top: 4px;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 456px;
+}
+
+.tag{
+    display: block;
+    background-color: #006633;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 68px;
+    cursor: pointer;
+    transition: background-color 150ms ease-out;
+}
+
+.tag:hover{
+    background-color: #BB6666;
+}
+
+.tag-text{
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 700;
+    height: 20px;
+    padding-left: 6px;
+    padding-right: 10px;
+}
+
+.tag-text>i{
+    margin-right: 10px;
+}
+
+/* Tags */
+
+/* Contact */
+
+section.contact{
+    margin-top: 22px;
+}
+
+/* Contact */
+
+/* Personal */
+
+section.personal{
+    margin-top: 23px;
+}
+
+/* Personal */
+
+/* Description */
+
+section.description{
+    margin-top: 20px;
+    padding-bottom: 9px;
+}
+
+p.description{
+    margin-top: 10px;
+    width: 440px;
+    font-size: 2.4rem;
+    color: #006633;
+    text-align: justify;
+    margin-inline: 8px;
+}
+
+/* Description */
+
