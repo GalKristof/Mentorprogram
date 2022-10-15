@@ -13,7 +13,7 @@ body, html {
     font-family: "Roboto", sans-serif;
     font-size: 10px;
     background-color: #E5E5E5;
-    color: white;
+    color: black;
 }
 
 /* CSS RESET és alapok */
@@ -30,4 +30,178 @@ body, html {
     text-align: center;
 }
 
+section.profile-card{
+    background-color: #fff;
+    position: relative;
+}
+
 /* Container */
+
+
+/* Profile */
+
+.profile{
+    position: relative;
+}
+
+.profile-image{
+    height: 266px;
+    width: 266px;
+    margin-top: 12px;
+    border-radius: 200px;
+}
+
+.top-left-element, .top-right-element{
+    position: absolute;
+    top: 12px;
+    left: 16px;
+    background-color: #55AE3A;
+    width: 32px;
+    height: 32px;
+    color: white;
+    font-size: 1.8rem;
+    border-radius: 50%;
+}
+
+.top-right-element{
+    left: unset;
+    right: 16px;
+}
+
+.top-left-element>i, .top-right-element>i{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1.name{
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-top: 3px;
+}
+
+.profile-details{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: left;
+    margin-left: 8px;
+    font-size: 2rem;
+    font-weight: 400;
+    width: 250px;
+}
+
+.detail-block .i-element{
+    color: white;
+    background-color: #55AE3A;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.i-element>i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+}
+
+.detail-block:first-of-type{
+    margin-right: 45px;
+}
+
+.detail-block:last-of-type{
+    margin-top: 4px;
+}
+
+
+/* Profile */
+
+/* Description */
+
+div.description{
+    font-size: 1.8rem;
+    width: 282px;
+    text-align: justify;
+    margin-inline: 8px;
+    margin-top: 9px;
+}
+
+/* Description */
+
+/* Follow Button */
+
+button.follow{
+    width: 138px;
+    height: 51px;
+    border-radius: 44px;
+    padding: 16px 32px;
+    gap: 8px;
+    background-color: #006633;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 13px;
+    margin-bottom: 29px;
+}
+
+/* Follow Button */
+
+
+/* Other Contacts */
+
+.contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 4px;
+    margin-inline: 7px;
+}
+
+.contact-button{
+    width: 44px;
+    height: 44px;
+    background-color: #006633;
+    color: white;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.contact-button>i{
+    font-size: 2.2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Other Contacts */
+
+/* Hover Animations */
+
+.contact-button:hover, button:hover, .i-element:hover, .top-element:hover{
+    transition: background-color 150ms ease-out;
+    background-color: #CC6767;
+    cursor: pointer;
+}
+
+/* Hover Animations */
+
+
+@media(min-width: 1366px)
+{
+    section.profile-card{
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .top-element{
+        display: none;
+    }
+}
