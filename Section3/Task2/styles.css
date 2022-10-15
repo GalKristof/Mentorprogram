@@ -106,6 +106,10 @@ nav{
     border: 1px solid #F2F2F2;
 }
 
+.signout{
+    display: none;
+}
+
 /* right */
 
 
@@ -151,7 +155,6 @@ nav{
 
 .search-bar{
     position: relative;
-    min-width: 300px;
 }
 
 .search-bar input{
@@ -290,6 +293,11 @@ span.date-text{
         cursor: pointer;
         transition: color .2s ease-in-out;
     }
+    
+    .signout{
+        display: block;
+    }
+
 
     .settings:hover, .signout:hover, .icon-elements ol li:hover{
         transform: scale(1.1);
@@ -315,17 +323,14 @@ span.date-text{
 
 }
 
-@media(min-width: 830px)
+@media(min-width: 1000px)
 {
     .bottom-container{
         display: block;
     }
-}
 
-@media(min-width: 1000px)
-{
     .search-bar{
-        min-width: 450px;
+        min-width: 300px;
     }
 }
 
@@ -370,6 +375,6 @@ span.date-text{
     /* bottom */
 
     .search-bar{
-        min-width: 800px;
+        min-width: 600px;
     }
 }
