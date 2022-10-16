@@ -150,6 +150,10 @@ button.follow{
     margin-bottom: 29px;
 }
 
+.desktop-follow{
+    display: none;
+}
+
 /* Follow Button */
 
 
@@ -157,7 +161,7 @@ button.follow{
 
 .contact{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(6, 1fr);
     gap: 4px;
     margin-inline: 7px;
 }
@@ -180,6 +184,10 @@ button.follow{
     transform: translate(-50%, -50%);
 }
 
+.contact-text{
+    display: none;
+}
+
 /* Other Contacts */
 
 /* Hover Animations */
@@ -192,16 +200,109 @@ button.follow{
 
 /* Hover Animations */
 
-
+/* 1366px */
 @media(min-width: 1366px)
 {
     section.profile-card{
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
 
+    .mobile-follow{
+        display: none;
+    }
+
+    .desktop-follow{
+        display: block;
     }
 
     .top-element{
         display: none;
     }
+
+    .profile-details{
+        flex-flow: column;
+    }
+
+    h1.name{
+        text-align: center;
+        margin-top: 18px;
+    }
+
+    .detail-block{
+        margin-top: 8px!important;
+    }
+
+    div.description{
+        width: 791px;
+    }
+
+    .contact{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 11px;
+    }
+
+    button.follow{
+        margin-top: 30px;
+        margin-bottom: unset;
+    }
+
+    .contact-text{
+        position: absolute;
+        width: max-content;
+        left: calc(100% + 5px);
+        top: 50%;
+        transform: translateY(-50%);
+        color: black;
+        font-size: 1.8rem;
+        font-weight: 400;
+        display: block;
+    }
+
+    .profile-details{
+        margin-left: 10px;
+    }
+
+    .phone{
+        order: 0;
+    }
+    
+    .instagram{
+        order: 1;
+    }
+
+    .gmail{
+        order: 2;
+    }
+
+    .twitter{
+        order: 3;
+    }
+
+    .message{
+        order: 4;
+    }
+
+    .facebook{
+        order: 5;
+    }
+
+    .profile{
+        margin: 8px;
+    }
+
+    .detail-block:nth-of-type(1){
+        order: 1;
+    }
+
+    .detail-block:nth-of-type(2){
+        order: 0;
+    }
+
+    .detail-block:nth-of-type(3){
+        order: 2;
+    }
+    
+
 }
