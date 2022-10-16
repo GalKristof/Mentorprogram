@@ -30,13 +30,17 @@ body, html {
     text-align: center;
 }
 
+header{
+    width: 298px;
+}
+
 /* Container */
 
 /* image */
 
 .image, .image img{
-    width: 700px;
-    height: 362px;
+    width: 100%;
+    height: 168px;
 }
 
 /* image */
@@ -52,8 +56,11 @@ body, html {
 }
 
 .line-right{
-    display: flex;
     margin-left: auto;
+}
+
+.line-left{
+    display: flex;
 }
 
 div.date{
@@ -87,11 +94,7 @@ i.category, span.category{
 }
 
 div.length{
-    margin-right: 15px;
-}
-
-div.watched{
-    margin-right: 24px;
+    margin-left: 21px;
 }
 
 span.length::after{
@@ -99,5 +102,40 @@ span.length::after{
 }
 
 
-
 /* line */
+
+
+/* article */
+
+article{
+    display: grid;
+    background: #fff;
+    grid-template-columns: auto auto;
+}
+
+img.author{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-top: 4px;
+    margin-left: 8px;
+}
+
+h1.title{
+    font-size: 1.4rem;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: justify;
+    margin-left: 5px;
+    margin-right: 8px;
+}
+
+p.article{
+    display: none;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-top: 6px;
+}
+
+/* article */
