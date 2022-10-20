@@ -30,16 +30,12 @@ body, html {
     text-align: center;
 }
 
-header{
-    width: 298px;
-}
-
 /* Container */
 
 /* image */
 
 .image, .image img{
-    width: 100%;
+    width: 298px;
     height: 168px;
 }
 
@@ -51,8 +47,8 @@ header{
 .line{
     display: flex;
     background-color: #006633;
-    height: 38px;
-    font-size: 1.6rem;
+    height: 24px;
+    font-size: 1.2rem;
 }
 
 .line-right{
@@ -64,7 +60,6 @@ header{
 }
 
 div.date{
-    font-size: 2rem;
     margin-right: 5px;
     font-weight: 700;
 }
@@ -83,7 +78,7 @@ div.date{
     background: white;
     color: black;
     transform: skew(-35deg);
-    margin-left: 18px;
+    margin-left: 14px;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -94,7 +89,7 @@ i.category, span.category{
 }
 
 div.length{
-    margin-left: 21px;
+    margin-left: 10px;
 }
 
 span.length::after{
@@ -111,6 +106,7 @@ article{
     display: grid;
     background: #fff;
     grid-template-columns: auto auto;
+    width: 298px;
 }
 
 img.author{
@@ -126,9 +122,14 @@ h1.title{
     color: black;
     text-transform: uppercase;
     font-weight: 900;
-    text-align: justify;
-    margin-left: 5px;
-    margin-right: 8px;
+    text-align: left;
+    margin: 6px 12px 6px 5px;
+    hyphens: manual;
+    letter-spacing: -0.04em;
+}
+
+h1.title>.first-line{
+    margin-right: 4rem;
 }
 
 p.article{
@@ -139,3 +140,77 @@ p.article{
 }
 
 /* article */
+
+
+
+/* MEDIUM SIZE */
+
+section.little-card{
+    display: none; /* idg */
+}
+
+section.medium-card .image, 
+section.medium-card .image>img{
+    width: 614px;
+    height: 310.45px;
+}
+
+section.medium-card img.author{
+    border: 2px solid #006633;
+    margin: 0;
+}
+
+section.medium-card div.author{
+    margin: auto 10px auto 8px;
+}
+section.medium-card .line{
+    height: 38px;
+}
+
+section.medium-card article{
+    width: 614px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.medium-card h1.title{
+    width: 503px;
+    max-width: 503px;
+    letter-spacing: unset;
+    font-weight: 900;
+    font-size: 3rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-left: 0;
+    hyphens: none;
+}
+
+section.medium-card p.article{
+    display: block;
+    color: black;
+    grid-column: span 2;
+    text-align: justify;
+    margin-inline: 8px;
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-bottom: 13px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+section.medium-card .cat{
+    height: calc(100% + 2px);
+    margin-top: -1px;
+}
+
+/* MEDIUM SIZE */
+
+
+/* WIDE CARD */
+
+
+/* WIDE CARD */
