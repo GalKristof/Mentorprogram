@@ -143,7 +143,7 @@ p.article{
 
 
 
-/* MEDIUM SIZE */
+/* MEDIUM, WIDE SIZE */
 
 section.little-card{
     display: none; /* idg */
@@ -163,17 +163,21 @@ section.medium-card img.author{
 section.medium-card div.author{
     margin: auto 10px auto 8px;
 }
-section.medium-card .line{
+
+section.medium-card .line,
+section.wide-card .line{
     height: 38px;
 }
 
-section.medium-card article{
+section.medium-card article,
+section.wide-card article{
     width: 614px;
     display: flex;
     flex-wrap: wrap;
 }
 
-section.medium-card h1.title{
+section.medium-card h1,
+section.wide-card h1{
     width: 503px;
     max-width: 503px;
     letter-spacing: unset;
@@ -187,7 +191,8 @@ section.medium-card h1.title{
     hyphens: none;
 }
 
-section.medium-card p.article{
+section.medium-card p.article,
+section.wide-card p.article{
     display: block;
     color: black;
     grid-column: span 2;
@@ -202,15 +207,112 @@ section.medium-card p.article{
     overflow: hidden;
 }
 
-section.medium-card .cat{
+section.medium-card .cat,
+section.wide-card .cat{
     height: calc(100% + 2px);
     margin-top: -1px;
 }
 
-/* MEDIUM SIZE */
+section.medium-card h1.title>.first-line,
+section.wide-card h1.title>.first-line{
+    margin-right: 0;
+    display: inline;
+}
+
+/* MEDIUM, WIDE SIZE */
 
 
 /* WIDE CARD */
 
+section.medium-card{
+    display: none; /* idg */
+}
+
+section.wide-card{
+    display: none;
+    grid-template-columns: auto auto;
+    background-color: #fff;
+}
+
+section.wide-card .image, 
+section.wide-card .image>img{
+    width: 298px;
+    height: 168px;
+    margin: 0;
+}
+
+section.wide-card .right-side{
+    width: 316px;
+}
+
+section.wide-card article{
+    width: 298px;
+    margin: 0;
+}
+
+section.wide-card p.article{
+    -webkit-line-clamp: 2;
+    font-size: 1.6rem;
+    margin-top: 10px;
+    margin-bottom: 19px;
+    margin-left: 9px;
+}
+
+section.wide-card h1.title{
+    width: 220px;
+    hyphens: none;
+    font-size: 2.2rem;
+    margin-inline: 0;
+    margin-top: 9px;
+    margin-bottom: 0;
+}
+
+section.wide-card div.author{
+    width: 40px;
+    margin-left: 10px;
+    margin-right: 7px;
+}
+
+section.wide-card img.author{
+    margin: 0;
+    margin-top: 6px;
+}
+
+section.wide-card .line{
+    font-size: 1.6rem;
+}
+
+section.wide-card .date{
+    font-size: 1.2rem;
+}
 
 /* WIDE CARD */
+
+
+/* Being Activated */
+
+section.little-card.activated,
+section.medium-card.activated,
+section.wide-card.activated{
+    display: grid;
+}
+
+button.switch{ /* Gomb csak azért, hogy cserélgetni tudjuk */
+    margin-top: 2rem;
+    width: 200px;
+    height: 40px;
+    font-size: 1.5rem;
+    background-color: #d18d23;
+    color: #20230f;
+    font-weight: 900;
+    border-radius: 50px;
+    border: 2px solid #20230f;
+    cursor: pointer;
+    transition: outline 50ms ease-out;
+}
+
+button.switch:hover{
+    outline: 2px solid #20230f;
+}
+
+/* Being Activated */
