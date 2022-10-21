@@ -54,14 +54,20 @@ main.columns,
 }
 
 main.columns{
+    display: flex;
     grid-template-columns: 1fr 2fr;
     margin-top: 16px;
     margin-inline: 48px;
 }
 
+.left-side{
+    margin-right: 20px;
+}
+
 .top-columns{
     grid-template-columns: 1fr 1fr;
     gap: 28px;
+    margin-left: 8px;
 }
 
 .top-columns>.column-list:last-of-type{
@@ -95,6 +101,7 @@ div.social-media{
     display: grid;
     grid-auto-flow: column;
     gap: 8px;
+    margin-bottom: 1.5px;
 }
 
 button.social-media{
@@ -120,3 +127,188 @@ button.social-media:first-of-type>i{
 }
 
 /* Main Column */
+
+/* Inbuilt AD */
+
+section.inbuilt-ad{
+    width: 398px;
+    height: 88px;
+    margin: 16px auto;
+}
+
+/* Inbuilt AD */
+
+/* Newsletter */
+
+section.newsletter{
+    padding: 38px 50px 36px 50px;
+    margin: 0;
+    background: #006633;
+    border-radius: 16px;
+    height: fit-content;
+}
+
+/* Container */
+
+/* Texts */
+
+section.newsletter
+h1{
+    color: white;
+    font-size: 3.2rem;
+    display: flex;
+}
+
+section.newsletter
+h2{
+    color: white;
+    font-size: 3.1rem;
+}
+
+section.newsletter
+h3{
+    font-weight: 400;
+    color: white;
+    display: inline-block;
+}
+
+section.newsletter
+span.accept{
+    font-weight: 700;
+    text-decoration: underline;
+    font-size: 1.4rem;
+}
+
+/* Texts */
+
+/* Inputs */
+
+section.newsletter
+input:not(#accept){
+    width: 400px;
+    height: 50px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 2px solid #55AE3A;
+    display: block;
+}
+
+input#name{
+    margin-bottom: 20px;
+    margin-top: 18px;
+}
+
+section.newsletter
+input[type=text], input[type=email]{
+    font-size: 2.9rem;
+    padding-left: 12px;
+    color: black;
+}
+
+section.newsletter
+input::placeholder{
+    color: black;
+}
+
+section.newsletter
+.accept-box{
+    display: flex;
+    position: relative;
+    height: 18px;
+    align-items: center;
+}
+
+section.newsletter
+input[type=checkbox]{
+    width: 18px;
+    height: 18px;
+    margin-right: 3px;
+    opacity: 0;
+}
+
+section.newsletter
+label.toggle{
+    cursor: pointer;
+}
+
+section.newsletter
+span.box{
+    width: 18px;
+    height: 18px;
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    border: 3px solid white;
+    transition: background-color .1s ease-in-out, border-color .1s ease-in-out;
+}
+
+section.newsletter
+span.box::before{
+    content:'\2713';
+    font-size: 1.4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    color: white;
+    transition: opacity .1s ease-in-out;
+    font-weight: bold;
+}
+
+section.newsletter
+input[type=checkbox]:checked + span.box{
+    background-color: rgb(221, 50, 50);
+    border-color: rgb(221, 50, 50);
+}
+
+section.newsletter
+input[type=checkbox]:checked + span.box::before{
+    opacity: 1;
+}
+
+/* Inputs */
+
+/* Button */
+
+section.newsletter
+.button{
+    margin-top: 30px;
+    text-align: center;
+}
+
+section.newsletter
+button{
+    width: 240px;
+    height: 50px;
+    border-radius: 44px;
+    padding: 8px;
+    background-color: #55AE3A;
+    box-shadow: 0px 1px 2px #1E1E25, 0px 2px 4px #1E1E22;
+    cursor: pointer;
+    transition: background-color .1s ease-in-out;
+}
+
+section.newsletter
+button:hover{
+    background-color: rgb(221, 50, 50);
+}
+
+/* Button */
+
+/* Image */
+
+section.newsletter
+img{
+    width: 55px;
+    height: 40px;
+    filter: brightness(0) invert(1);
+}
+
+/* Image */
+
+/* Newsletter */
