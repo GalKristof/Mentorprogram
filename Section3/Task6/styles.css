@@ -30,4 +30,93 @@ body, html {
     text-align: center;
 }
 
+footer{
+    background-color: #fff;
+}
+
 /* Container */
+
+/* Seperator */
+section.seperator{
+    height: 38px;
+    background-color: red; /* ideiglenesen, hogy a helyét lássuk */
+}
+
+/* Seperator */
+
+/* Main Column */
+
+main.columns, 
+.right-side,
+.top-columns{
+    display: grid;
+    text-align: left;
+}
+
+main.columns{
+    grid-template-columns: 1fr 2fr;
+    margin-top: 16px;
+    margin-inline: 48px;
+}
+
+.top-columns{
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+}
+
+.top-columns>.column-list:last-of-type{
+    margin-top: 5px;
+}
+
+.bottom-columns{
+    margin-top: auto;
+    text-align: center;
+}
+
+.column-list-title{
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.column-list-element{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-left: 12px;
+}
+
+h1.follow{
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+div.social-media{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 8px;
+}
+
+button.social-media{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: #006633;
+    color: white;
+    border-radius: 50%;
+    font-size: 2.2rem;
+}
+
+button.social-media>i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button.social-media:first-of-type>i{
+    top: 60%;
+    font-size: 3.2rem;
+}
+
+/* Main Column */
