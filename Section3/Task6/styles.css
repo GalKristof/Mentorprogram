@@ -81,7 +81,6 @@ section.seperator{
 .colored-box{
     width: 21.56px;
     height: 19px;
-    background-color: blue;
     position: absolute;
 }
 
@@ -309,6 +308,15 @@ section.inbuilt-ad{
 
 /* Inbuilt AD */
 
+/* Sportmagazin */
+
+section.sportmagazine{
+    position: relative;
+    display: none;
+}
+
+/* Sportmagazin */
+
 /* Newsletter */
 
 section.newsletter{
@@ -413,12 +421,105 @@ img{
     text-decoration: unset;
 }
 
-
 /* Bottom-Side */
 
 @media(min-width: 1024px)
 {
+    /* Turn off unnecesseary */
     .inbuilt-ad{
         display: none;
     }
+    /* Turn off unnecesseary */
+
+    main.columns{
+        margin: 47px 134px 0 134px;
+    }
+
+    /* Sportmagazin */
+
+    section.sportmagazine{
+        display: block;
+        background-color: #006633;
+        margin: 20px 134px;
+        width: calc(756.5px);
+        height: 425px;
+        overflow: hidden;
+    }
+
+    img.crest{
+        height: 100px;
+        position: absolute;
+        top: 37px;
+        left: 23.5px;
+        z-index: 2;
+        transform: translateX(-25%);
+    }
+
+    h3.marketing-text{
+        font-size: 2.6rem;
+        font-weight: 700;
+        width: 255px;
+        color: #55AE3A;
+        position: absolute;
+        left: 378px;
+        top: 145px;
+        z-index: 2;
+    }
+
+    span.marketing-inside{
+        color: white;
+    }
+
+    img.background-player{
+        width: 540px;
+        height: 425px;
+        object-fit: cover;
+        position: absolute;
+        left: -19px;
+        z-index: 1;
+        filter: brightness(0.7); /* Olvashatóbb szöveg érdekében */
+    }
+
+    button.marketing-show{
+        position: absolute;
+        width: 175px;
+        height: 51.8px;
+        background-color: #FFE600;
+        border-radius: 8px;
+        font-size: 2.6rem;
+        font-weight: 700;
+        left: 407px;
+        top: 252px;
+        z-index: 2;
+    }
+
+    .sport-left{
+        position: absolute;
+        left: -0.5px;
+        z-index: 2;
+        width: 162.5px;
+        height: 360px;
+        background-color: #006633;
+        clip-path: polygon(0 0, 100% 0%, 5% 100%, 0 100%);
+    }
+
+    .sport-right{
+        z-index: 2;
+        position: absolute;
+        right: 0;
+        width: 468px;
+        height: 425px;
+        clip-path: polygon(43% 0, 100% 0, 100% 100%, 0 100%);
+        background-color: #006633;
+    }
+
+    /* Sportmagazin */
+
+    /* Newsletter */
+
+    section.newsletter{
+        margin-inline: 134px;
+    }
+
+    /* Newsletter */
 }
