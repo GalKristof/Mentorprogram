@@ -415,3 +415,10 @@ img{
 
 
 /* Bottom-Side */
+
+@media(min-width: 1024px)
+{
+    .inbuilt-ad{
+        display: none;
+    }
+}
