@@ -16,6 +16,12 @@ body, html {
     color: black;
 }
 
+:root{
+    --size-of-seperator-box: 21.56px;
+    --half-size-of-seperator-box: calc(var(--size-of-seperator-box)/2);
+    --medium-scale: 2.47;
+}
+
 /* CSS RESET és alapok */
 
 /* Container */
@@ -40,7 +46,7 @@ footer{
 
 
 section.seperator{
-    width: 414px;
+    width: 100%;
     height: 38px;
     background-color: #1A1A1A;
     display: flex;
@@ -49,7 +55,7 @@ section.seperator{
 
 .seperator-line{
     display: flex;
-    transform: translate(-10.78px);
+    transform: translateX(-10.78px);
     gap: 0;
     position: relative;
 }
@@ -60,22 +66,22 @@ section.seperator{
 
 .seperator-line:nth-of-type(2),
 .seperator-line:nth-of-type(7){
-    left: calc(10.7px*8);
+    left: calc(var(--half-size-of-seperator-box)*8);
 }
 
 .seperator-line:nth-of-type(3),
 .seperator-line:nth-of-type(8){
-    left: calc(10.7px*8*2);
+    left: calc(var(--half-size-of-seperator-box)*8*2);
 }
 
 .seperator-line:nth-of-type(4),
 .seperator-line:nth-of-type(9){
-    left: calc(10.7px*8*3);
+    left: calc(var(--half-size-of-seperator-box)*8*3);
 }
 
 .seperator-line:nth-of-type(5),
 .seperator-line:nth-of-type(10){
-    left: calc(10.7px*8*4);
+    left: calc(var(--half-size-of-seperator-box)*8*4);
 }
 
 .colored-box{
@@ -122,38 +128,38 @@ section.seperator{
 
 .green-1{
     background-color: #1A7547;
-    left: 10.78px;
+    left: var(--half-size-of-seperator-box);
 }
 
 .green-2{
     background-color: #006633;
-    left: calc(10.78px*2);
+    left: calc(var(--half-size-of-seperator-box)*2);
 }
 
 .green-3{
     background-color: #4C9D34;
-    left: calc(10.78px*3);
+    left: calc(var(--half-size-of-seperator-box)*3);
 }
 
 .green-4{
     background-color: #55AE3A;
-    left: calc(10.78px*4);
+    left: calc(var(--half-size-of-seperator-box)*4);
 }
 
 .light-gray{
     background-color: #E5E5E5;
-    left: calc(10.78px*5);
+    left: calc(var(--half-size-of-seperator-box)*5);
 }
 
 .white{
     background-color: white;
-    left: calc(10.78px*6);
+    left: calc(var(--half-size-of-seperator-box)*6);
 }
 
 .black{
     background-color: black;
     z-index: -2;
-    left: calc(10.78px*7);
+    left: calc(var(--half-size-of-seperator-box)*7);
 }
 
 .top-line:last-of-type
@@ -346,7 +352,7 @@ section.newsletter
 input{
     width: 100%;
     height: 30px;
-    border-radius: 4px;
+    
     margin-bottom: 10px;
     margin-top: 10px;
     border-radius: 44px;
@@ -431,9 +437,169 @@ img{
     }
     /* Turn off unnecesseary */
 
+    /* Seperator */
+
+    section.seperator{
+        height: 93px;
+    }
+
+    .seperator-line{
+        transform: translateX(-26.665px);
+    }
+
+    .colored-box{
+        width: 53.33px;
+        height: 46.5px;
+    }
+
+    .seperator-line.bottom-line{
+        top: 46.5px;
+    }
+
+    .seperator-line:nth-of-type(2),
+    .seperator-line:nth-of-type(7){
+        left: calc(var(--half-size-of-seperator-box)*8*var(--medium-scale));
+    }
+
+    .seperator-line:nth-of-type(3),
+    .seperator-line:nth-of-type(8){
+        left: calc(var(--half-size-of-seperator-box)*8*2*var(--medium-scale));
+    }
+
+    .seperator-line:nth-of-type(4),
+    .seperator-line:nth-of-type(9){
+        left: calc(var(--half-size-of-seperator-box)*8*3*var(--medium-scale));
+    }
+
+    .seperator-line:nth-of-type(5),
+    .seperator-line:nth-of-type(10){
+        left: calc(var(--half-size-of-seperator-box)*8*4*var(--medium-scale));
+    }
+
+    .green-1{
+        left: calc(var(--half-size-of-seperator-box)*var(--medium-scale));
+    }
+    
+    .green-2{
+        left: calc(var(--half-size-of-seperator-box)*2*var(--medium-scale));
+    }
+    
+    .green-3{
+        left: calc(var(--half-size-of-seperator-box)*3*var(--medium-scale));
+    }
+    
+    .green-4{
+        left: calc(var(--half-size-of-seperator-box)*4*var(--medium-scale));
+    }
+    
+    .light-gray{
+        left: calc(var(--half-size-of-seperator-box)*5*var(--medium-scale));
+    }
+    
+    .white{
+        left: calc(var(--half-size-of-seperator-box)*6*var(--medium-scale));
+    }
+    
+    .black{
+        left: calc(var(--half-size-of-seperator-box)*7*var(--medium-scale));
+    }
+
+    .bottom-line
+    .green-2{
+        left: 0;
+    }
+
+    .bottom-line
+    .green-1{
+        left: calc(var(--half-size-of-seperator-box)*var(--medium-scale));
+    }
+
+    .bottom-line
+    .green-4{
+        left: calc(var(--half-size-of-seperator-box)*2*var(--medium-scale));
+    }
+
+    .bottom-line
+    .green-3{
+        left: calc(var(--half-size-of-seperator-box)*3*var(--medium-scale));
+    }
+
+    .bottom-line
+    .white{
+        left: calc(var(--half-size-of-seperator-box)*4*var(--medium-scale));
+
+    }
+
+    .bottom-line
+    .light-gray{
+        left: calc(var(--half-size-of-seperator-box)*5*var(--medium-scale));
+
+    }
+
+    .bottom-line
+    .dark-gray{
+        z-index: -2;
+        left: calc(var(--half-size-of-seperator-box)*6*var(--medium-scale));
+    }
+
+    .bottom-line
+    .black{
+        z-index: -2;
+        left: calc(var(--half-size-of-seperator-box)*7*var(--medium-scale));
+    }
+
+
+    /* Seperator */
+    
+    
+    /* Main Column */
+
     main.columns{
         margin: 47px 134px 0 134px;
     }
+
+    .column-list-title{
+        font-size: 3.2rem;
+        margin-bottom: 22px;
+    }
+    
+    .column-list-element{
+        font-size: 2.4rem;
+        margin-left: 25px;
+    }
+
+    .left-side{
+        margin-right: 103px;
+    }
+
+    .top-columns{
+        gap: 100px;
+    }
+
+    h1.follow{
+        font-size: 3.2rem;
+        text-align: left;
+    }
+
+    div.social-media{
+        display: flex;
+    }
+
+    button.social-media{
+        width: 60px;
+        height: 60px;
+    }
+
+    button.social-media:first-of-type>i{
+        font-size: 4.8rem;
+        top: 62%;
+    }
+
+    button.social-media>i{
+        font-size: 3.2rem;
+    }
+    
+    /* Main Column */
 
     /* Sportmagazin */
 
@@ -521,5 +687,25 @@ img{
         margin-inline: 134px;
     }
 
+    section.newsletter
+    h1{
+        font-size: 3.2rem;
+    }
+    section.newsletter
+    img{
+        width: 50px;
+        height: 40px;
+    }
+
+    section.newsletter
+    input{
+        width: 100%;
+        height: 50px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        padding-left: 12px;
+        font-size: 2.9rem;
+    }
+
+
     /* Newsletter */
-}
