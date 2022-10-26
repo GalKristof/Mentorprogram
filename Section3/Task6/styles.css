@@ -228,6 +228,7 @@ main.columns,
 .top-columns{
     display: grid;
     text-align: left;
+    align-items: baseline;
 }
 
 main.columns{
@@ -244,6 +245,7 @@ main.columns{
     grid-template-columns: 1fr 1fr;
     gap: 28px;
     margin-left: 8px;
+    margin-bottom: 26px;
 }
 
 .top-columns>.column-list:last-of-type{
@@ -432,7 +434,7 @@ img{
 
 /* Bottom-Side */
 
-@media(min-width: 524px)
+@media(min-width: 1024px)
 {
     /* Turn off unnecesseary */
     .inbuilt-ad{
@@ -582,6 +584,7 @@ img{
     h1.follow{
         font-size: 3.2rem;
         text-align: left;
+        margin-bottom: 0;
     }
 
     div.social-media{
@@ -860,22 +863,66 @@ img{
 
     /* Bottom-Side */
 
-    ul.bottom-elements{
+    section.bottom-side{
+        padding-top: 18px;
+        padding-bottom: 20px;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr;
+        justify-content: center;
     }
 
-    li.bottom-element{
+    .bottom-element{
         font-size: 2.6rem;
+    }
+    
+    ul.bottom-elements{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    li.bottom-element{
+        width: max-content;
+        display: inline-block;
+        margin: 0;
         text-decoration: none;
     }
 
-    li.copyright{
-        grid-column: span 3;
+    span.copyright{
+        margin-top: 16px;
     }
 
 
     /* Bottom-Side */
+
+
+}
+
+@media(min-width: 1920px)
+{
+    footer{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+    }
+
+    .seperator, .bottom-side{
+        grid-column: span 3;
+    }
+
+    main.columns, 
+    section.sportmagazine,
+    section.newsletter{
+        margin: 0;
+    }
+
+    .left-side{
+        margin-right: 76px;
+    }
+
+    .top-columns{
+        gap: 74px;
+    }
 
 
 }
