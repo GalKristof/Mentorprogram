@@ -334,6 +334,10 @@ section.newsletter{
     margin-right: 8px;
 }
 
+div.accept-box{
+    display: none;
+}
+
 section.newsletter
 h1{
     color: white;
@@ -724,12 +728,16 @@ img{
 
     section.newsletter{
         margin-inline: 134px;
+        padding-top: 38px;
+        padding-bottom: 38px;
+        border-radius: 16px;
     }
 
     section.newsletter
     h1{
         font-size: 3.2rem;
     }
+
     section.newsletter
     img{
         width: 50px;
@@ -746,6 +754,128 @@ img{
         font-size: 2.9rem;
     }
 
-}
+    section.newsletter
+    .accept-box{
+        display: flex;
+        position: relative;
+        height: 18px;
+        align-items: center;
+        margin-top: 15px;
+        margin-bottom: 12px;
+    }
+    
+    section.newsletter
+    input[type=checkbox]{
+        width: 18px;
+        height: 18px;
+        margin-right: 3px;
+        opacity: 0;
+        display: inline-block;
+    }
+    
+    section.newsletter
+    label.toggle{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+        
+    section.newsletter
+    span.box{
+        width: 18px;
+        height: 18px;
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        background-color: transparent;
+        border: 3px solid white;
+        transition: background-color .1s ease-in-out, border-color .1s ease-in-out;
+    }
+        
+    section.newsletter
+    span.box::before{
+        content:'\2713';
+        font-size: 1.4rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        color: white;
+        transition: opacity .1s ease-in-out;
+        font-weight: bold;
+    }
+        
+    section.newsletter
+    input[type=checkbox]:checked + span.box{
+        background-color: rgb(221, 50, 50);
+        border-color: rgb(221, 50, 50);
+    }
+        
+    section.newsletter
+    input[type=checkbox]:checked + span.box::before{
+        opacity: 1;
+    }
+
+    section.newsletter
+    h3{
+        font-weight: 400;
+        color: white;
+        display: inline-block;
+    }
+    
+    section.newsletter
+    span.accept{
+        font-weight: 700;
+        text-decoration: underline;
+        font-size: 1.4rem;
+    }
+
+    section.newsletter 
+    button{
+        width: 220px;
+        height: 48px;
+        display: flex;
+        margin-inline: auto;
+        align-items: center;
+    }
+    
+    section.newsletter
+    button h2{
+        font-size: 3.1rem;
+        width: max-content;
+        display: flex;
+        align-items: center;
+    }
+
+    section.newsletter
+    i.fa.fa-bell{
+        font-size: 2.2rem;
+        margin-right: 9px;
+    }
 
     /* Newsletter */
+
+    /* Bottom-Side */
+
+    ul.bottom-elements{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    li.bottom-element{
+        font-size: 2.6rem;
+        text-decoration: none;
+    }
+
+    li.copyright{
+        grid-column: span 3;
+    }
+
+
+    /* Bottom-Side */
+
+
+}
