@@ -18,8 +18,9 @@ body, html {
 
 :root{
     --size-of-seperator-box: 21.56px;
+    --size-of-medium-seperator-box: 53.33px;
     --half-size-of-seperator-box: calc(var(--size-of-seperator-box)/2);
-    --medium-scale: 2.47;
+    --scale: 2.473;
 }
 
 /* CSS RESET és alapok */
@@ -289,7 +290,6 @@ button.social-media{
     background-color: #006633;
     color: white;
     border-radius: 50%;
-    font-size: 2.2rem;
 }
 
 button.social-media>i{
@@ -463,50 +463,50 @@ img{
 
     .seperator-line:nth-of-type(2),
     .seperator-line:nth-of-type(7){
-        left: calc(var(--half-size-of-seperator-box)*8*var(--medium-scale));
+        left: calc(var(--half-size-of-seperator-box)*8*var(--scale));
     }
 
     .seperator-line:nth-of-type(3),
     .seperator-line:nth-of-type(8){
-        left: calc(var(--half-size-of-seperator-box)*8*2*var(--medium-scale));
+        left: calc(var(--half-size-of-seperator-box)*8*2*var(--scale));
     }
 
     .seperator-line:nth-of-type(4),
     .seperator-line:nth-of-type(9){
-        left: calc(var(--half-size-of-seperator-box)*8*3*var(--medium-scale));
+        left: calc(var(--half-size-of-seperator-box)*8*3*var(--scale));
     }
 
     .seperator-line:nth-of-type(5),
     .seperator-line:nth-of-type(10){
-        left: calc(var(--half-size-of-seperator-box)*8*4*var(--medium-scale));
+        left: calc(var(--half-size-of-seperator-box)*8*4*var(--scale));
     }
 
     .green-1{
-        left: calc(var(--half-size-of-seperator-box)*var(--medium-scale));
+        left: calc(var(--half-size-of-seperator-box)*var(--scale));
     }
     
     .green-2{
-        left: calc(var(--half-size-of-seperator-box)*2*var(--medium-scale));
+        left: calc(var(--half-size-of-seperator-box)*2*var(--scale));
     }
     
     .green-3{
-        left: calc(var(--half-size-of-seperator-box)*3*var(--medium-scale));
+        left: calc(var(--half-size-of-seperator-box)*3*var(--scale));
     }
     
     .green-4{
-        left: calc(var(--half-size-of-seperator-box)*4*var(--medium-scale));
+        left: calc(var(--half-size-of-seperator-box)*4*var(--scale));
     }
     
     .light-gray{
-        left: calc(var(--half-size-of-seperator-box)*5*var(--medium-scale));
+        left: calc(var(--half-size-of-seperator-box)*5*var(--scale));
     }
     
     .white{
-        left: calc(var(--half-size-of-seperator-box)*6*var(--medium-scale));
+        left: calc(var(--half-size-of-seperator-box)*6*var(--scale));
     }
     
     .black{
-        left: calc(var(--half-size-of-seperator-box)*7*var(--medium-scale));
+        left: calc(var(--half-size-of-seperator-box)*7*var(--scale));
     }
 
     .bottom-line
@@ -516,41 +516,41 @@ img{
 
     .bottom-line
     .green-1{
-        left: calc(var(--half-size-of-seperator-box)*var(--medium-scale));
+        left: calc(var(--half-size-of-seperator-box)*var(--scale));
     }
 
     .bottom-line
     .green-4{
-        left: calc(var(--half-size-of-seperator-box)*2*var(--medium-scale));
+        left: calc(var(--half-size-of-seperator-box)*2*var(--scale));
     }
 
     .bottom-line
     .green-3{
-        left: calc(var(--half-size-of-seperator-box)*3*var(--medium-scale));
+        left: calc(var(--half-size-of-seperator-box)*3*var(--scale));
     }
 
     .bottom-line
     .white{
-        left: calc(var(--half-size-of-seperator-box)*4*var(--medium-scale));
+        left: calc(var(--half-size-of-seperator-box)*4*var(--scale));
 
     }
 
     .bottom-line
     .light-gray{
-        left: calc(var(--half-size-of-seperator-box)*5*var(--medium-scale));
+        left: calc(var(--half-size-of-seperator-box)*5*var(--scale));
 
     }
 
     .bottom-line
     .dark-gray{
         z-index: -2;
-        left: calc(var(--half-size-of-seperator-box)*6*var(--medium-scale));
+        left: calc(var(--half-size-of-seperator-box)*6*var(--scale));
     }
 
     .bottom-line
     .black{
         z-index: -2;
-        left: calc(var(--half-size-of-seperator-box)*7*var(--medium-scale));
+        left: calc(var(--half-size-of-seperator-box)*7*var(--scale));
     }
 
 
@@ -594,6 +594,12 @@ img{
     button.social-media{
         width: 60px;
         height: 60px;
+        transition: background-color 100ms ease-in;
+    }
+
+    button.social-media:hover{
+        background-color:rgb(221, 50, 50);
+        cursor: pointer;
     }
 
     button.social-media:first-of-type>i{
@@ -613,7 +619,7 @@ img{
         display: block;
         background-color: #006633;
         margin: 20px 134px;
-        width: calc(756.5px);
+        width: 756.5px;
         height: 425px;
         overflow: hidden;
     }
@@ -663,6 +669,13 @@ img{
         left: 407px;
         top: 252px;
         z-index: 2;
+        transition: background-color 100ms ease-in, color 100ms ease-in;
+    }
+
+    button.marketing-show:hover{
+        background-color:rgb(221, 50, 50);
+        color: white;
+        cursor: pointer;
     }
 
     .sport-left{
@@ -745,6 +758,22 @@ img{
     img{
         width: 50px;
         height: 40px;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        transform-origin: bottom;
+    }
+
+    section.newsletter
+    img:hover{
+        animation-name: rotateImg;
+        animation-timing-function: ease;
+    }
+
+    @keyframes rotateImg{
+        0% { transform: rotate(0deg); }
+        25% { transform: rotate(25deg); }
+        75%  { transform: rotate(-25deg); }
+        100%  { transform: rotate(0deg); }
     }
 
     section.newsletter
@@ -894,20 +923,23 @@ img{
 
 
     /* Bottom-Side */
-
-
+    
+    
 }
 
 @media(min-width: 1920px)
 {
+    
     footer{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        justify-content: center;
+        display: flex;
+        flex-direction: column;
     }
-
-    .seperator, .bottom-side{
-        grid-column: span 3;
+    
+    section.content{
+        display: flex;
+        flex-direction: row;
+        margin: 86px 25px 86px 26px;
+        gap: 38px;
     }
 
     main.columns, 
@@ -915,14 +947,148 @@ img{
     section.newsletter{
         margin: 0;
     }
-
-    .left-side{
-        margin-right: 76px;
+    
+    /* Seperator */
+    
+    .colored-box{
+        width: 100px;
+        height: 87px;
     }
+    
+    :root{
+        --scale: 4.638;
+    }
+    
+    section.seperator{
+        height: 174px;
+    }
+    
+    .seperator-line.bottom-line{
+        top: 87px;
+    }
+    
+    .seperator-line{
+        transform: translateX(-50px);
+    }
+    
+    /* Seperator */
 
+
+    /* Main */
+
+    .columns,
     .top-columns{
         gap: 74px;
     }
 
+    .left-side{
+        margin-right: 0;
+        width: 153px;
+    }
+
+    .right-side{
+        margin-left: 0;
+        width: 468.5px;
+    }
+
+    button.social-media{
+        width: 80px;
+        height: 79.52px;
+    }
+
+    button.social-media:first-of-type>i{
+        font-size: 6.45rem;
+    }
+
+    button.social-media>i{
+        font-size: 4.3rem;
+    }
+
+    /* Main */
+
+    /* Sportmagazine */
+
+    section.sportmagazine{
+        width: 640.5px;
+        height: 360px;
+    }
+
+    img.background-player{
+        height: 360px;
+        transform: rotateY(180deg);
+    }
+
+    .sport-left{
+        clip-path: polygon(0 0, 100% 0%, 10% 100%, 0 100%);
+    }
+    
+    .sport-right{
+        width: 352px;
+        height: 360px;
+    }
+    
+    h3.marketing-text{
+        left: unset;
+        right: 7px;
+    }
+
+    button.marketing-show{
+        left: unset;
+        right: 48px;
+    }
+
+    /* Sportmagazine */
+
+
+    /* Newsletter */
+
+    section.newsletter{
+        width: 457px;
+        height: 360px;
+    }
+    
+    section.newsletter 
+    input{
+        border-radius: 4px;
+    }
+
+    section.newsletter 
+    .button{
+        margin-top: 28px;
+    }
+
+    section.newsletter 
+    .accept-box{
+        margin-top: 10px;
+    }
+    
+    /* Newsletter */
+
+    /* Bottom-Side */
+
+    ul.bottom-elements{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0;
+    }
+
+    li.bottom-element{
+        width: 100%;
+        font-size: 4rem;
+    }
+
+    span.bottom-element{
+        font-size: 3.2rem;
+        margin-top: 21px;
+        margin-bottom: 0;
+    }
+
+    section.bottom-side{
+        padding-top: 14px;
+        padding-bottom: 16px;
+    }
+    /* Bottom-Side */
+
+    
 
 }
