@@ -13,7 +13,6 @@ body, html {
     font-family: "Roboto", sans-serif;
     font-size: 10px;
     background-color: #E5E5E5;
-    color: white;
 }
 
 /* CSS RESET és alapok */
@@ -31,17 +30,20 @@ body, html {
 }
 
 section.login-panel{
-    background-color: white;
+    background-color: #333333;
+    color: #F2F2F2;
     border-radius: 8px;
-    padding-top: 60px;
-    padding-bottom: 54px;
+    padding-top: 33px;
+    padding-bottom: 25px;
 }
 /* Container */
 
 /* Welcome Titles */
 
 .welcome{
-    color: black;
+    display: flex;
+    flex-flow: column;
+    gap: 8px;
 }
 
 h1{
@@ -62,16 +64,15 @@ h2{
 .switch-panel{
     display: flex;
     justify-content: center;
-    margin-top: 21px;
+    margin-top: 27px;
 }
 
 .switch-panel button{
     width: 133px;
     height: 36px;
-    background-color: #006633;
-    border: 1px solid #55AE3A;
+    background-color: #333333;
+    border: 1px solid #F2F2F2;
     color: white;
-    border-radius: 0px 44px 44px 0px;
     text-transform: uppercase;
     font-family: "Work Sans", sans-serif;
     font-weight: 700;
@@ -87,15 +88,14 @@ h2{
     color: white;
 }
 
-
-.switch-panel .login{
-    border-left: unset;
+.switch-panel .register{
+    border-radius: 0px 4px 4px 0px;
 }
 
-.switch-panel .register{
-    background-color: white;
-    color: #006633;
-    border-radius: 44px 0px 0px 44px;
+.switch-panel .login{
+    background-color: #E0E0E0;
+    color: #0400D1;
+    border-radius: 4px 0px 0px 4px;
     border-right: unset;
 }
 
@@ -107,39 +107,28 @@ h2{
     margin-top: 29px;
     font-size: 1.6rem;
     position: relative;
+    margin-left: 24px;
+    margin-right: 25px;
 }
 
-input[type="email"], #password{
+#email, #password{
     display: block;
-    width: 266px;
+    width: 304px;
     height: 36px;
-    border-radius: 44px;
-    border: 1px solid #006633;
-    color: #55AE3A;
-    padding-left: 6px;
-    margin-inline: auto;
+    background-color: #333333;
+    border-radius: 4px;
+    border: 1px solid #BDBDBD;
+    color: #F2F2F2;
+    padding-left: 5px;
+    font-size: 1.6rem;
 }
 
-#password{
-    margin-top: 33px;
-    margin-bottom: 2px;
+#email{
+    margin-bottom: 25px;
 }
 
 input[type="email"]::placeholder, #password::placeholder{
-    color: #55AE3A;
-}
-
-input[type="email"]:invalid{
-    border-color: #EF3A43;
-}
-
-input[type="email"]:invalid + #invalid-email{
-    display: block;
-    color: #EF3A43;
-    position: absolute;
-    top: 38px;
-    left: 24px;
-    font-size: 1.4rem;
+    color: #F2F2F2;
 }
 
 .password-container{
@@ -147,10 +136,10 @@ input[type="email"]:invalid + #invalid-email{
 }
 
 #eye{
-    font-size: 1.5rem;
-    color: #55AE3A;
+    font-size: 1.8rem;
+    color: #E0E0E0;
     position: absolute;
-    right: 26.5px;
+    right: 10.5px;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
@@ -167,37 +156,38 @@ input[type="email"]:invalid + #invalid-email{
 
 .forgetpassword{
     display: block;
-    color: black;
+    color: #828282;
     text-align: left;
-    margin-left: 8.5px;
+    margin-left: 8px;
+    margin-top: 8px;
+    cursor: pointer;
 }
-
 
 .forgetpassword:hover{
     text-decoration: underline;
 }
 
 div.rememberme{
-    color: black;
-    margin-top: 65px;
+    color: #F2F2F2;
+    margin-top: 20px;
     text-align: left;
-    margin-left: 14px;
     position: relative;
 }
 
 span.rememberme{
-    position: absolute;
+    position: relative;
+    display: inline-block;
     left: 45px;
-    height: 20px;
-    width: max-content;
+    height: 100%;
+    vertical-align: middle;
     cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: 400;
 }
 
 .switch {
     display: inline-block;
-    height: 34px;
     position: relative;
-    width: 60px;
 }
   
 #checkbox{
@@ -205,7 +195,7 @@ span.rememberme{
 }
   
 .slider {
-    background-color: #BFBFBF;
+    background-color: #BDBDBD;
     position: absolute;
     transition: background-color .3s ease-in-out;
     width: 33px;
@@ -215,7 +205,7 @@ span.rememberme{
 }
   
   .slider:before {
-    background-color: #55AE3A;
+    background-color: #F2F2F2;
     content: "";
     height: 26px;
     position: absolute;
@@ -233,6 +223,14 @@ span.rememberme{
     transform: translateX(13px);
 }
 
+.input-label{
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: left;
+    display: block;
+    margin-left: 5px;
+}
+
 
 
 /* Form */
@@ -240,31 +238,33 @@ span.rememberme{
 /* Choose button */
 
 section.choose{
-    margin-top: 18px;
+    margin-top: 24px;
 }
 
 button.proceed-login{
     position: relative;
-    width: 260px;
+    width: 261px;
     height: 40px;
-    border-radius: 44px;
-    background-color: #006633;
+    background: #F2F2F2;
+    border: 2px solid #BDBDBD;
+    border-radius: 8px;
     font-size: 1.4rem;
-    width: 260px;
     font-weight: 700;
-    color: white;
+    color: #0400D1;
     text-transform: uppercase;
     font-family: "Work Sans", sans-serif;
     text-align: center;
     cursor: pointer;
-    transition: background-color .2s ease-in-out;
+    transition: background-color .2s ease-in-out,
+    border-color .2s ease-in-out,
+    color .2s ease-in-out;
 }
 
 button.proceed-login:hover{
     background-color: #EF3A43;
+    border-color: #EF3A43;
+    color: white;
 }
-
-
 
 /* Choose button */
 
@@ -272,11 +272,12 @@ button.proceed-login:hover{
 
 section.divider{
     width: 100%;
-    margin-top: 15px;
+    margin-top: 13px;
+    position: relative;
 }
 
 span.divider{
-    color: #55AE3A;
+    color: #F2F2F2;
     text-transform: uppercase;
     font-weight: 700;
     font-size: .9rem;
@@ -284,20 +285,22 @@ span.divider{
 }
 
 section.divider::before, section.divider::after{
+    position: absolute;
     content: "";
     width: 116px;
-    border-bottom: 1px solid #55AE3A;
+    border-bottom: 1px solid #4F4F4F;
     height: 0px;
     display: inline-block;
-    background-color: #55AE3A;
-    margin-right: 18px;
-    margin-left: 1px;
+    background-color: #4F4F4F;
     vertical-align: middle;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
 }
 
-span.divider::after{
-    margin-right: 1px;
-    margin-left: 18px;
+section.divider::after{
+    left: unset;
+    right: 31px;
 }
 
 /* Divider */
@@ -307,16 +310,16 @@ span.divider::after{
 .different-login{
     margin-top: 16px;
     display: flex;
-    gap: 14px;
+    gap: 32px;
     justify-content: center;
 }
 
 button.different{
     width: 38px;
     height: 38px;
-    background-color: #006633;
+    background-color: #4F4F4F;
     color: white;
-    border-radius: 44px;
+    border-radius: 4px;
     font-size: 2.4rem;
     position: relative;
     cursor: pointer;
