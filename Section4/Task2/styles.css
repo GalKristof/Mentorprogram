@@ -82,6 +82,15 @@ div.check>i{
     margin-bottom: 22px;
 }
 
+.modification-elements>i{
+    transition: color 100ms ease-in;
+}
+
+.modification-elements>i:hover{
+    color: #32A000;
+    cursor: pointer;
+}
+
 /* Overlay Elements */
 
 /* Article Banner */
@@ -124,6 +133,15 @@ span.date{
     margin-right: 13px;
 }
 
+i.bookmark{
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: color 100ms ease-in;
+}
+
+i.bookmark:hover{
+    color: #32A000;
+}
 
 /* Top-Line */
 
@@ -168,6 +186,7 @@ button.read-more{
     height: 32px;
     border-radius: 8px;
     border: 2px solid #bdbdbd;
+    background-color: #F2F2F2;
     margin-left: 12px;
     color: #0400D1;
     font-size: 1.2rem;
@@ -175,6 +194,16 @@ button.read-more{
     font-family: 'Work Sans', sans-serif;
     text-transform: uppercase;
     margin-bottom: 14px;
+    transition: color 150ms ease-in,
+                background-color 150ms ease-in,
+                border 150ms ease-in;
+}
+
+button.read-more:hover{
+    color: #F2F2F2;
+    background-color: #0400D1;
+    border-color: #0400D1;
+    cursor: pointer;
 }
 
 /* Article */
@@ -220,6 +249,10 @@ ul.hashtags{
     width: 156px;
     column-gap: 1ch;
     font-size: 1.2rem;
+}
+
+li.hashtag:hover{
+    text-decoration: underline;
 }
 
 /* SEO */
