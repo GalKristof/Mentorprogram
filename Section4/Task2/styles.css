@@ -1,0 +1,32 @@
+/* CSS RESET és alapok */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    outline: none;
+}
+
+body, html {
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+    background-color: #E5E5E5;
+}
+
+/* CSS RESET és alapok */
+
+/* Container */
+
+.container{
+    width: max-content;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    text-align: center;
+}
+
+/* Container */
