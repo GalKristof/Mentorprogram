@@ -1,0 +1,58 @@
+/* CSS RESET és alapok */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    outline: none;
+}
+
+body, html {
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+    background-color: white;
+}
+
+/* CSS RESET és alapok */
+
+/* Container */
+
+.container{
+    position: relative;
+    width: max-content;
+    margin: auto;
+    padding: unset;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    text-align: center;
+    flex-flow: column;
+    transform: unset;
+    left: unset;
+    top: unset;
+}
+
+/* Menu */
+
+.menu{
+    width: max-content;
+    margin: 0 auto;
+    color: white;
+}
+
+/* Menu */
+
+/* Main Content */
+
+main.content{
+    display: flex;
+    flex-flow: row;
+    color: black;
+    margin: 24px 179px 46px 179px;
+    gap: 176px;
+}
+
+/* Main Content */
