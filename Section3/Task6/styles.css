@@ -226,7 +226,8 @@ section.seperator{
 /* Main Column */
 
 main.columns, 
-.right-side,
+main.columns
+    .right-side,
 .top-columns{
     display: grid;
     text-align: left;
@@ -239,7 +240,8 @@ main.columns{
     margin: 16px 39px 0px 39px;
 }
 
-.left-side{
+main.columns
+    .left-side{
     margin-right: 20px;
 }
 
@@ -414,6 +416,7 @@ img{
 
 /* Bottom-Side */
 
+footer
 .bottom-side{
     margin-top: 20px;
     background-color: #006633;
@@ -486,6 +489,7 @@ img{
         margin-left: 25px;
     }
 
+    main.columns
     .left-side{
         margin-right: 103px;
     }
@@ -805,6 +809,7 @@ img{
 
     /* Bottom-Side */
 
+    footer
     section.bottom-side{
         padding-top: 18px;
         padding-bottom: 20px;
@@ -894,11 +899,13 @@ img{
         gap: 74px;
     }
 
+    main.columns
     .left-side{
         margin-right: 0;
         width: 153px;
     }
 
+    main.columns
     .right-side{
         margin-left: 0;
         width: 468.5px;
@@ -996,6 +1003,7 @@ img{
         margin-bottom: 0;
     }
 
+    footer
     section.bottom-side{
         padding-top: 14px;
         padding-bottom: 16px;

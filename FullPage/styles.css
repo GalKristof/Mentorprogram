@@ -47,11 +47,44 @@ body, html {
 
 /* Main Content */
 
+
 main.content{
     display: flex;
     flex-flow: row;
     color: black;
     margin: 24px auto 46px auto;
 }
+
+/* Left Side */
+/* Left Side */
+
+
+/* Right Side */
+
+section.top-row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 16px;
+}
+
+section.medium-card{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+section.bottom-row{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+section.bottom-row
+.bottom-row-left-column,
+section.bottom-row
+.bottom-row-right-column{
+    display: flex;
+    flex-flow: column;
+}
+
+/* Right Side */
 
 /* Main Content */
