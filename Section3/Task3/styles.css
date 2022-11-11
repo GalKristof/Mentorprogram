@@ -40,11 +40,13 @@ section.profile-card{
 
 /* Profile */
 
+section.profile-card
 section.profile{
     color: #006633;
     padding-top: 34px;
 }
 
+section.profile-card
 img.profile{
     width: 234px;
     height: 234px;

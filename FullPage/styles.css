@@ -51,8 +51,7 @@ main.content{
     display: flex;
     flex-flow: row;
     color: black;
-    margin: 24px 179px 46px 179px;
-    gap: 176px;
+    margin: 24px auto 46px auto;
 }
 
 /* Main Content */

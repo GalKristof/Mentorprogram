@@ -99,7 +99,11 @@ nav{
     display: none;
 }
 
-.profile, .profile img{
+
+.header-nav-left .profile,
+.header-nav-left .profile img,
+.header-nav-right .profile,
+.header-nav-right .profile img{
     height: 32px;
     width: 32px;
     border-radius: 50%;
@@ -311,13 +315,17 @@ span.date-text{
         justify-content: space-between;
     }
 
-    .profile, .profile img{
+    .header-nav-left .profile,
+    .header-nav-left .profile img,
+    .header-nav-right .profile,
+    .header-nav-right .profile img{
         height: 64px;
         width: 64px;
         cursor: pointer;
     }
 
-    .profile:hover{
+    .header-nav-left .profile:hover,
+    .header-nav-right .profile:hover{
         transform: scale(1.1);
     }
 

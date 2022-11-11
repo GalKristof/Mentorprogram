@@ -145,7 +145,8 @@ p.article{
 /* MEDIUM, WIDE SIZE */
 
 section.little-card{
-    display: none; /* idg */
+    display: grid;
+    width: max-content;
 }
 
 section.medium-card .image, 
@@ -224,11 +225,11 @@ section.wide-card h1.title>.first-line{
 /* WIDE CARD */
 
 section.medium-card{
-    display: none; /* idg */
+    display: grid;
 }
 
 section.wide-card{
-    display: none;
+    display: grid;
     grid-template-columns: auto auto;
     background-color: #fff;
 }
@@ -290,10 +291,10 @@ section.wide-card .date{
 
 /* Being Activated */
 
-section.little-card.activated,
-section.medium-card.activated,
-section.wide-card.activated{
-    display: grid;
+section.little-card.hidden,
+section.medium-card.hidden,
+section.wide-card.hidden{
+    display: none;
 }
 
 button.switch{ /* Gomb csak azért, hogy cserélgetni tudjuk */
