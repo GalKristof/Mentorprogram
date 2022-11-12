@@ -118,6 +118,11 @@ h3.block-title{
     font-size: 3.2rem;
 }
 
+div.length,
+div.date{
+    color: white;
+}
+
 /* Right Side */
 
 /* Main Content */
@@ -126,6 +131,11 @@ h3.block-title{
 
 ul.bottom-elements>li{
     color: white;
+}
+
+.bottom-element-text:hover{
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 footer{
@@ -154,6 +164,17 @@ section.newsletter{
 
 section.seperator{
     clip-path: polygon(0 0, 50% 0, 40% 100%, 0% 100%);
+}
+
+.column-list-title,
+.column-list-element,
+h1.follow{
+    color: black;
+}
+
+section.newsletter 
+label.toggle{
+    height: 100%;
 }
 
 /* Footer */
