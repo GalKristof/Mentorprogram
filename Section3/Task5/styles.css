@@ -226,6 +226,7 @@ section.wide-card h1.title>.first-line{
 
 section.medium-card{
     display: grid;
+    width: max-content;
 }
 
 section.wide-card{
